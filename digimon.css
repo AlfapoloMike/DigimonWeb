@@ -1,0 +1,660 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+
+    /* font-family: pixelari-fit, 'Press Start 2P'; */
+    font-family:  pixelari-fit, 'Press Start 2P';
+    color:#08292B;
+
+    
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+body{
+    background-image: url(./assets/Pixeles/whitebackground.jpg);
+}
+
+/* -----------------------------HEADER-------------------------------------------------- */
+
+header{
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    margin-top: 2rem;
+}
+.header-gif{
+    text-align: center;
+}
+.header-gif img{
+
+    border-radius: 50%;
+    background-color: white;    
+}
+.header-colorbox{
+    background-image: url(./assets/digimon-ui/digimon\ digital\ monster\ logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:0;
+    border-radius: 20px 20px 0 0;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    height: 100%;
+}
+
+.nav a{
+    padding:0.2rem;
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 75%,#26b5a2 10%);
+    border-radius: 1rem; 
+    margin: 0.5rem 0 0.5rem 0; 
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:#08292B;  
+}
+
+.nav a:hover{
+    color:whitesmoke;
+}
+
+/* ------------------------CARD DIGIMON------------------------------------------- */
+.title{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: underline;
+    margin-top:3rem;
+}
+
+.card-image{
+    margin: 0 1rem 0 0 ;
+    
+}
+.card-image img{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.8rem;
+}
+
+.data-top{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 75%,#26b5a2 10%);
+    text-align: center;
+    border-top: 20px solid transparent;
+    border-image: url(./assets/Pixeles/SVG/tecno-double-double.svg) 8 round;
+    border-radius: 10px;
+    margin: 0 0 1rem 0; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;    
+}
+
+.data-column{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 70%,#26b5a2 10%);
+    border-top: 20px solid transparent;
+    border-image: url(./assets/Pixeles/SVG/tecno-double-double.svg) 8 round;
+    border-radius: 10px;
+    padding:0.5rem;
+}
+.stat-column h2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.stat-column p{
+    font-size: 1.4rem;
+    font-weight: normal;
+
+
+}
+.left{
+    
+    margin: 0 0.5rem 0 0;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.data-left h2{
+    font-weight:800;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+.data-left p{
+    font-size: 1.5rem;
+}
+
+.digimon-name h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+
+
+.right{
+    margin: 0 0 0 0.5rem;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+
+/* --------------------------------EVOLUTION LINE------------------------------------------------ */
+
+.green-background{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 70%,#26b5a2 10%);
+}
+.evolution-line{
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+/* -------------------------------------------------ALTERNATE AND VARIANTS--------------------------------------------------------------- */
+.variantes{
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    padding: 1.5rem;
+}
+
+.green-background-variant{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 70%,#26b5a2 10%);
+    margin: 0 1rem 0 1rem;
+    border-radius: 1rem;
+}
+.alternative-box{
+    text-align: center;
+    padding: 1rem;
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+.alternative-box h2{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.alternative-box p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    margin-top: 2rem;
+}
+.footer-copyright{
+    font-size: 2rem;
+    color:#26b5a2 ;
+    text-align: center;
+}
+.footer-gif {
+    align-content: center;
+    align-items: center;
+}
+
+
+
+[class*="col-"] {
+    width: 100%
+}
+
+
+@media only screen and (min-width: 1120px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+/* -----------------------------HEADER-------------------------------------------------- */
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 30rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 25rem; */
+    height: 100%;
+}
+.nav a{
+    width: 60%;
+}
+
+/* ------------------------CARD DIGIMON------------------------------------------- */
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top:5rem;
+    margin: auto;
+}
+.card-image img{
+    height: 26rem;
+}
+.card-data{
+    height: 28rem;
+}
+.data-top{
+    height: 10rem;
+}
+.data-column-container{
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+}
+
+.left{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.right{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* --------------------------------EVOLUTION LINE------------------------------------------------ */
+
+.evolution-line{
+    margin:10rem 0 10rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    background-size: 25rem;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+.evolution-line img{
+    height: 15rem;
+    width: auto;
+    transform-origin: bottom;
+    transform: scale(1.18);
+    padding-bottom: 0.2rem;
+}
+/* -------------------------------------------------ALTERNATE AND VARIANTS--------------------------------------------------------------- */
+
+.alternative-lines{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.green-background-variant{
+    width: fit-content;
+}
+.alternative-box{
+    height: 100%;
+    background-size: 25rem;
+}
+
+.alternative-box img{
+    width: 19rem;
+}
+.alternative-box p{
+    margin-top: 1rem;
+}
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{
+    height: 15rem;
+}
+.footer-copyright{
+    padding: 9rem 0 0 0;
+}
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+
+
+}
+
+@media only screen and (min-width: 451px) and (max-width:1119px){
+   /* ---------------------------------------HEADER-------------------------------------------------- */
+
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 23rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.nav a{
+    width: 40%;
+}
+
+
+/* -------------------------------------CARD----------------------------------------------------- */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top:1rem;
+    margin: auto;
+}
+
+.card-image img{
+    /* margin: auto; */
+}
+.data-top{
+    height: fit-content;
+    margin: 1% 8% 1% 8%;
+    padding-bottom: 1rem;
+}
+.data-column-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 8% 1% 8%;
+}
+
+.left{
+    margin:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.taichi-container{
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+
+}
+.right{
+    margin:auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stat-column{
+    width: 7.1rem;
+}
+
+/* -------------------------------------------EVOLUTION LINE--------------------------------------------------------- */
+
+
+.green-background{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 70%,#26b5a2 10%);
+    margin: 3rem;
+}
+.evolution-line{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: top;
+    margin: 2rem 0 2rem 0;
+}
+.evolution-line img{
+    height:auto;
+    width: 18rem;
+    transform-origin: none;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+/* -----------------------------------------------------ALTERNATIVO--------------------------------------------------------------- */
+
+.alternative-lines{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.green-background-variant{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.alternative-lines img{
+    width: 20rem;
+}
+
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{    
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+}
+
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+ 
+}
+
+@media only screen and (max-width:450px) {
+
+/* ---------------------------------------HEADER-------------------------------------------------- */
+
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 23rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 25rem; */
+    height: 100%;
+}
+.nav a{
+    width: 60%;
+}
+
+
+/* -------------------------------------CARD----------------------------------------------------- */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    padding-top:1rem;
+    margin: auto;
+}
+
+.card-image img{
+    margin: auto;
+    padding-bottom:2rem;
+    max-width: 100%;
+}
+.data-top{
+    height: fit-content;
+    padding-bottom: 1rem;
+}
+.data-column-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    margin:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.taichi-container{
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+
+}
+.right{
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.stat-column{
+    width: 7.1rem;
+}
+
+/* -------------------------------------------EVOLUTION LINE--------------------------------------------------------- */
+
+
+.green-background{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 70%,#26b5a2 10%);
+}
+.evolution-line{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: top;
+    margin: 2rem 0 2rem 0;
+}
+.evolution-line img{
+    height:auto;
+    width: 18rem;
+    transform-origin: none;
+    padding-bottom: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+/* -----------------------------------------------------ALTERNATIVO--------------------------------------------------------------- */
+
+.alternative-lines{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.green-background-variant{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.alternative-lines img{
+    width: 20rem;
+}
+
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{    
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+}
+
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+
+
+}
+
+  /*-------------------- FUENTES AGREGADAS ------------------*/
+@font-face { font-family: pixel7-regular; 
+    src: url('./assets/font/pixelfont/pixel\ font-7.ttf'); }
+@font-face { font-family: pixel-exton; 
+    src: url('./assets/font/pixelfont/Exton\ Free\ Trial.ttf'); }
+     /*-------------------- ADDED FONTS------------------*/
+
+@font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+@font-face { font-family: notalo-fit; 
+            src: url('./assets/font/upheavtt.ttf'); }
+           
+
+ 

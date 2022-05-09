@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+
+    /* font-family: pixelari-fit, 'Press Start 2P'; */
+    font-family:  pixelari-fit, 'Press Start 2P';
+    color:#08292B;
+
+    
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+body{
+    background-image: url(./assets/Pixeles/whitebackground.jpg);
+}
+
+/* -----------------------------HEADER-------------------------------------------------- */
+
+header{
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    margin-top: 2rem;
+}
+.header-gif{
+    text-align: center;
+}
+.header-gif img{
+
+    border-radius: 50%;
+    background-color: white;    
+}
+.header-colorbox{
+    background-image: url(./assets/digimon-ui/digimon\ digital\ monster\ logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:0;
+    border-radius: 20px 20px 0 0;
+    
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    height: 100%;
+}
+
+.nav a{
+    padding:0.2rem;
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 75%,#26b5a2 10%);
+    border-radius: 1rem; 
+    margin: 0.5rem 0 0.5rem 0; 
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:#08292B;  
+}
+
+.nav a:hover{
+    color:whitesmoke;
+}
+
+/* ---------------------------------------------------TAMERS----------------------------------------------------- */
+.tamer_card{
+    background-image: linear-gradient(160deg,#26b5a2 10%, #5CA5AC 75%,#26b5a2 10%);
+    margin:5rem 0 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-content: center;
+    align-items: center;
+}
+.tamerdata h2{
+    font-size: 3rem;
+}
+.tamerdata{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    width: 50rem;
+    z-index:100;
+    
+}
+.tamerdata p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* position: absolute; */
+}
+.tamer_image{
+    width: fit-content;
+    height: fit-content;
+}
+.tamer_image img{
+    width: auto;
+    height: 25rem;
+}
+
+.digimonimage{
+    width: auto;
+    height: 20rem;
+    align-items: center;
+    align-content: center;
+    z-index: -1;
+    /* position: relative; */
+}
+.digimonlinkcontainer{
+    text-align: center;
+}
+.digimonlinkcontainer img{
+    width: auto;
+    height: 15rem;
+}
+.digimonlinkcontainer h3{
+    font-size: 3rem;
+}
+.digimonlinkcontainer p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+    margin-top: 2rem;
+}
+.footer-copyright{
+    font-size: 2rem;
+    color:#26b5a2 ;
+    text-align: center;
+}
+.footer-gif {
+    align-content: center;
+    align-items: center;
+}
+
+
+
+[class*="col-"] {
+    width: 100%
+}
+
+
+@media only screen and (min-width: 1120px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+/* -----------------------------HEADER-------------------------------------------------- */
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 30rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 25rem; */
+    height: 100%;
+}
+.nav a{
+    width: 60%;
+}
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{
+    height: 15rem;
+}
+.footer-copyright{
+    padding: 9rem 0 0 0;
+}
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+
+
+}
+
+@media only screen and (min-width: 451px) and (max-width:1119px){
+   /* ---------------------------------------HEADER-------------------------------------------------- */
+
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 23rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+.nav a{
+    width: 40%;
+}
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{    
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+}
+
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+ 
+}
+
+@media only screen and (max-width:450px) {
+
+/* ---------------------------------------HEADER-------------------------------------------------- */
+
+.header-gif img{
+    width:12rem;  
+}
+.header-colorbox{
+    height: 14rem;
+    background-size: 23rem; 
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 25rem; */
+    height: 100%;
+}
+.nav a{
+    width: 60%;
+}
+
+
+/* --------------------------------------------FOOTER----------------------------------------------------------- */
+
+footer{    
+    background-image: url(./assets/Pixeles/SVG/tecno-double-double.svg);
+}
+
+.footer-gif {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-gif img{
+    border-radius: 50%;
+    height: 8rem;
+
+}
+
+
+}
+
+  /*-------------------- FUENTES AGREGADAS ------------------*/
+@font-face { font-family: pixel7-regular; 
+    src: url('./assets/font/pixelfont/pixel\ font-7.ttf'); }
+@font-face { font-family: pixel-exton; 
+    src: url('./assets/font/pixelfont/Exton\ Free\ Trial.ttf'); }
+     /*-------------------- ADDED FONTS------------------*/
+
+@font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+@font-face { font-family: notalo-fit; 
+            src: url('./assets/font/upheavtt.ttf'); }
+           
+
+ 

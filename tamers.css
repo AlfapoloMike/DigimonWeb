@@ -1,0 +1,592 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: pixelari-regular , cursive;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+body{
+    background-image:url(./assets/SVG/xddd.png);
+    background-repeat:repeat-y;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  /*----------HEADER-------------*/
+  .header-background{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.logo{
+    width: auto;
+    height: 160px;
+    max-height: 100%;
+}
+
+.agumongif{
+    width: auto;
+    filter: brightness(1.1);
+    background-blend-mode: multiply;
+    height: 160px;
+    max-height: 100%;
+}
+
+/*-------------HEADER-NAV-------------*/
+.navcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin: 0px 0px 100px 0px;
+    padding-top:30px;
+ 
+}
+.navcontainer a{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.navcontainer a:hover{
+    color: grey;
+}
+/*---------------------TAMERS INTRO-------------------  */
+
+
+
+.digi-destinies-story{
+   display: flex;
+   flex-direction: column;
+   justify-content: stretch;
+   padding: 30px;
+   background-color: white;
+   border-radius: 10px;
+}
+
+.tamers-img{
+
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+
+  /*-----------------TAMERS NAV-------------------------*/
+
+
+.lefttamer h3, .righttamer h3{
+    padding-top: 30px;
+    margin: 10px;
+    font-family:'Press Start 2P', cursive;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+
+}
+.fondored_l:hover h3,.fondored_r:hover h3, .fondoblue_l:hover h3, .fondoblue_r:hover h3, .fondogreen_l:hover h3,
+.fondogreen_r:hover h3, .fondoyellow_r:hover h3, .fondoyellow_l:hover h3{
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
+}
+.fondored_l:hover .tai,.fondoblue_l:hover .matt,.fondogreen_l:hover .izzy,.fondoyellow_l:hover .tk,
+.fondored_r:hover .sora,.fondoblue_r:hover .joe,.fondogreen_r:hover .mimi,.fondoyellow_r:hover .ikari{
+    animation-name: fliping;
+    animation-duration:1s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+.fondored_l:hover,.fondoblue_l:hover,.fondogreen_l:hover,.fondoyellow_l:hover,
+.fondored_r:hover,.fondoblue_r:hover,.fondogreen_r:hover,.fondoyellow_r:hover{
+    animation-name: scaling;
+    animation-duration:1s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+
+/*-------------------NAV IZQUIERDO------------------------*/
+
+
+.fondored_l{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #880918, #ef001c);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+    
+}
+.tai{
+    max-width:100%;
+    width:100px;
+    height: auto;
+
+}
+
+.fondoblue_l{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #005c83, #009ade);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.matt{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+.fondogreen_l{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #01704d, #009c6b);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.izzy{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+.fondoyellow_l{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #796b02, #fedf00);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.tk{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+
+/*-------------------NAV DERECHO------------------------*/
+.fondored_r, .righttamer h3,.fondoblue_r, .fondogreen_r, .fondoyellow_r{
+    border-radius:0px 20px 0px 20px;
+}
+.fondored_r{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #880918, #ef001c);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+
+}
+.sora{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+
+.fondoblue_r{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #005c83, #009ade);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.joe{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+.fondogreen_r{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #01704d, #009c6b);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.mimi{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+.fondoyellow_r{
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #796b02, #fedf00);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 5px solid black;
+    border-radius:10px;
+    margin-bottom: 10px;
+}
+.ikari{
+    max-width:100%;
+    width:100px;
+    height: auto;
+}
+/*--------------TAMERS LINKS STYLE---------------------*/
+.righttamer a, .lefttamer a{
+    color: black;
+    text-decoration: none;
+}
+/*---------------------------TAMERS------------------------------*/
+.digimonlinkcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.frienddigimon{
+    margin-top: 30px;
+    text-align: center;
+}
+.frienddigimon p{
+    font-size: 30px;
+    font-family:'Press Start 2P', cursive;
+}
+.tamer_image{
+text-align: center;
+}
+.tamer_image img{
+    max-width: 100%;
+    height: auto;
+}
+.tamerstory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.digimonimage{
+    width: auto;
+    height: 15rem;
+}
+.tamerdata div{
+    padding: 10px;
+}
+.tamerdata{
+    padding-left: 50px;
+}
+
+.taiagumonlink img{
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.tamer_name{
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+
+
+ /*----------------FOOTER---------------------------*/
+  
+ .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+  /*-----------------------FOOTER---------------------------*/
+  
+  .footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #2a2a2a, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+}
+ /*---------------------FOOTER-NAV--------------------------*/ 
+.footernav{     
+       padding-left: 15px;
+       padding-right: 15px;
+       
+}
+.footernav li{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.footernav a{
+       font-size: 30px;
+       padding: 5px;
+       color: whitesmoke; 
+       font-family: pixelari-fit , cursive; 
+}
+.footernav a:hover{
+       color: grey;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white; 
+    font-family: pixelari-fit , cursive;
+    letter-spacing: 2px;
+    height: 190px;
+
+}
+/*----------------FOOTER-GIF--------------------------*/ 
+.egggif{
+        padding:0px;
+        text-align: center;
+}
+.egggif img{
+       margin-top: 30px;
+       max-width: 100%;
+       width: 250px;
+       border-radius: 50px;
+       padding: 10px;
+}
+
+
+[class*="col-"] {
+    width: 100%
+}
+[class*="card"] {
+    margin: 3.5rem 3rem 3.5rem 3rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+
+}
+
+
+@media only screen and (min-width: 1150px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .menu a{text-align: left;}
+    
+    .digimonlinkcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+    }
+    .digi-destinies-story{
+        display: flex;
+        flex-direction: row;
+        padding: 60px;
+        margin: 20px;
+        border-radius: 10px;
+     }
+     .black-bar{
+        display: block;
+    }
+    
+  }
+
+@keyframes fliping {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+@keyframes scaling {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+}
+
+ /*-------------------- ADDED FONTS------------------*/
+
+ @font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+
+
+
+/*--------- ANIMACION  // DIVISOR DE SECCIONES-------*/
+
+.animation{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animationhere1{
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: movingtoright;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+   
+}
+.centerball{
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    animation-name: dissapear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.animationhere2{
+    width: 2em;
+    height: 1em;
+    background-color: black;
+    border-radius: 20px 0px 0px 20px;
+    animation-name: movingtoleft;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes movingtoright {
+    0%{
+        transform: translate(-1em,0);
+        width: 2em;
+        height: 1em;
+        opacity: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+    20%{
+        border-radius: 20px; 
+    }
+    100%{  
+        transform: translate(8em,0);
+        width: 1em;
+        height: 1em;
+        opacity: 0%;
+        border-radius: 20px; 
+    }
+}
+
+@keyframes movingtoleft {
+    0%{
+        transform: translate(1em,0);
+        opacity: 100%;
+        width: 2em;
+        height: 1em;
+        border-radius: 20px 0px 0px 20px;
+    }
+    20%{
+        border-radius: 20px; 
+    }
+    100%{
+        transform: translate(-8em,0);
+        opacity: 0%;
+        width: 1em;
+        height: 1em;
+        border-radius: 20px; 
+
+    }
+}
+
+@keyframes dissapear {
+    0%{ 
+        transform: scale(1);
+    }
+    20%{
+        border-radius: 20px;
+    }
+    100%{
+        transform: scale(0);
+        border-radius: 20px;
+        opacity: 0%;
+        
+    }
+}

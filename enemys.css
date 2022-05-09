@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: pixelari-regular , cursive;
+    font-size: 20px;
+}
+
+body{
+    background-image: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #08010B, #1F0D26,#33193F,#000000);
+    background-blend-mode: multiply;
+    background-repeat:repeat-y;
+    background-size: cover;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+
+
+  /*----------HEADER-------------*/
+.header-background{
+    background: BLACK;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #000000, #120526);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.logo{
+    width: auto;
+    height: 160px;
+    max-height: 100%;
+}
+
+.agumongif{
+    width: auto;
+    filter: brightness(1.1);
+    background-blend-mode: multiply;
+    height: 160px;
+    max-height: 100%;
+}
+
+/*-------------HEADER-NAV-------------*/
+.navcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    margin: 0px 0px 100px 0px;
+    padding-top:30px;
+    border-style: solid;
+    border-width: 0 0 1rem 0;
+ 
+}
+.navcontainer a{
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.navcontainer a:hover{
+    color: grey;
+}
+/*-----------------------------------------------------*/
+
+
+.enemys img{
+    width: auto;
+    height: 20rem;
+}
+
+.enemys article{
+    margin: 5rem;
+}
+
+/*-----------------------FOOTER---------------------------*/
+  
+.footer{
+    background: BLACK;
+    margin-top: 30px;
+    background: url(./assets/Sin\ título-1.png),linear-gradient(180deg, #120526, #000000);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat:repeat-x;
+    border-style: solid;
+    border-color: black;
+    border-width: 1rem 0 0 0;
+}
+ /*---------------------FOOTER-NAV--------------------------*/ 
+.footernav{     
+       padding-left: 15px;
+       padding-right: 15px;
+       
+}
+.footernav li{
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.footernav a{
+       font-size: 30px;
+       padding: 5px;
+       color: whitesmoke; 
+       font-family: pixelari-fit , cursive; 
+}
+.footernav a:hover{
+       color: grey;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white; 
+    font-family: pixelari-fit , cursive;
+    letter-spacing: 2px;
+    height: 190px;
+
+}
+
+/*----------------FOOTER-GIF--------------------------*/ 
+.egggif{
+        padding:0px;
+        text-align: center;
+}
+.egggif img{
+       margin-top: 30px;
+       max-width: 100%;
+       width: 250px;
+       border-radius: 50px;
+       padding: 10px;
+}
+
+@media only screen and (min-width: 1040px) {
+    /* Para escritorio */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}   
+  }
+
+ /*-------------------- ADDED FONTS------------------*/
+
+ @font-face { font-family: pixel-regular; 
+    src: url('./assets/font/pixelfont/Symtext.ttf'); }
+@font-face { font-family: pixelari-regular; 
+        src: url('./assets/font/Pixellari.ttf'); }
+@font-face { font-family: pixelari-fit; 
+            src: url('./assets/font/PIXELADE.TTF'); }
+

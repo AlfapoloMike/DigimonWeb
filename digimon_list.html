@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./digimon_list.css">
+    <title>Digimon Website - Lista de Digimons</title>
+</head>
+
+<body>
+
+    <header class="header row">
+        <div class="header-gif col-2">
+            <img src="./assets/digimon-ui/header.gif" alt="">
+        </div>
+        <div class="header-colorbox col-5">
+
+        </div>
+        <div class="header-divisor col-2">
+
+        </div>
+        <div class="nav col-3">
+            <a href="">Inicio</a>
+            <a href="">Tamers</a>
+            <a href="/digimon_list.html">Digimon List</a>
+            <a href="">Somestory</a>
+        </div>
+    </header>
+
+    <form id="buscador">
+        <div class="">
+            <div class="selectContainer">
+                <label for="Tipo">Tipo</label>
+                <select name="" id="type">
+                    <option value="">seleccione</option>
+                </select>
+
+            </div>
+            <div class="selectContainer">
+                <label for="Nivel">Nivel</label>
+                <select name="" id="level">
+                    <option value="">seleccione</option>
+                </select>
+
+            </div>
+            <div class="selectContainer">
+                <label for="Elemento">Elemento</label>
+                <select name="" id="element">
+                    <option value="">seleccione</option>
+                </select>
+
+            </div>
+            <div class="selectContainer">
+                <label for="Familia">Familia</label>
+                <select name="" id="family">
+                    <option value="">seleccione</option>
+                </select>
+            </div>
+        </div>
+    </form>
+    <div id="resultado">
+
+    </div>
+
+</body>
+<script src="Js/db.js"></script>
+<script src="Js/app.js"></script>
+
+</html>
